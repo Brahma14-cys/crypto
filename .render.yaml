@@ -3,7 +3,4 @@ services:
     name: crypto
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn crypto:app
-    envVars:
-      - key: FLASK_ENV
-        value: production
+    startCommand: python crypto.py
